@@ -20,7 +20,6 @@ export default class DogBreedImagesContainer extends Component {
   }
 
   render() {
-    const breed = encodeURIComponent(this.props.match.params.breed)
-    return <DogBreedImages breed={breed} images={ this.state.images } />
+    return <DogBreedImages match={this.props.match.params.breed} images={ this.state.images } />
   }
 }
